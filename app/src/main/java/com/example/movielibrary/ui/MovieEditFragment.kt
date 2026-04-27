@@ -100,7 +100,7 @@ class MovieEditFragment : Fragment() {
             Toast.makeText(requireContext(), "Película actualizada", Toast.LENGTH_SHORT).show()
         }
 
-        // TODO: Parte 5 — volver atrás con NavController
+        findNavController().popBackStack()
     }
 
     override fun onDestroyView() {
